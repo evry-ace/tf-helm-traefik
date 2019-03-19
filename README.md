@@ -6,7 +6,7 @@ This module will deploy traefik as a service in traefik_namespace.
 
 ```hcl
 module "traefik" {
-  source          "github.com/evry-ace/tf-helm-traefik"
+  source          = "github.com/evry-ace/tf-helm-traefik"
   traefik_version = "${var.traefik_version}"
 }
 ```
