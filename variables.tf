@@ -7,3 +7,6 @@ variable "traefik_namespace" {
 variable "traefik_rbac_enabled" {
   default = "true"
 }
+
+variable "traefik_values" {
+}

@@ -4,8 +4,5 @@ resource "helm_release" "traefik" {
   version   = "${var.traefik_version}"
   namespace = "${var.traefik_namespace}"
 
-  set {
-    name  = "rbac.enabled"
-    value = "${var.traefik_rbac_enabled}"
-  }
+  values = "${var.traefik_values}"
 }
