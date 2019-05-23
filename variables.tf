@@ -9,4 +9,5 @@ variable "traefik_rbac_enabled" {
 }
 
 variable "traefik_values" {
+  type = "list"
 }
